@@ -30,3 +30,35 @@ img {
   border-bottom: 2px solid #f8f9fa;
   position: relative;
 }
+.slogo-start::after {
+  content: '';
+  border-right: 1px solid;
+  font-size: 20px;
+}
+.header-slogon {
+  .bridge {
+    font-size: 25px;
+    padding: 0 10px;
+  }
+  h2 {
+    font-weight: 600;
+  }
+}
+.header-picture {
+  width: 100%;
+}
+.header-feature {
+  margin-right: 10px;
+  img {
+    margin-right: 10px;
+  }
+}
+@media(max-width: 812px){
+  .header-feature {
+    margin-right: 0px;
+    width: 25%;
+  }
+}
+.Fundraising-section {
+  border-left: 5px solid #ffdf65;
+}
