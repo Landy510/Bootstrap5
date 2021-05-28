@@ -1,1 +1,3 @@
-!function(){console.log($("header"))}();
+;(function () {
+  console.log('') // 測試 jquery 用的
+})()
