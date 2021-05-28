@@ -1,6 +1,32 @@
-@import "../../node_modules/bootstrap/scss/functions";
-@import "./helper/variables";
-
-.header {
-  color: green;
+@import 'functions';
+@import './helper/variables';
+@import 'mixins';
+@import 'bootstrap';
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.logo {
+  height: 40px;
+  width: 100px;
+}
+.bg-cover {
+  background-position: center;
+  background-size: cover;
+}
+.navbar-bottom-line {
+  border-bottom: 4px solid #ffdf65;
+}
+.navbar-register-section {
+  margin-left: auto;
+  .btn {
+    padding: 5px 30px;
+  }
+  .btn-primary {
+    margin-right: 10px;
+  }
+}
+.register-section-hint {
+  border-bottom: 2px solid #f8f9fa;
+  position: relative;
 }
