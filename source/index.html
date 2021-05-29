@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>拼拼</title>
   <link rel="stylesheet" href="./stylesheets/all.css">
 </head>
 <body>
@@ -112,8 +112,103 @@
       </div>
     </div>
   </header>
-
-
+  <main class="mb-5">
+    <div class="container-fluid border border-csSecondary border-top-0 main-content-nav">
+      <div class="container main-content-nav">
+        <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
+          <li class="nav-item border-0 rounded-0" role="presentation">
+            <button class="nav-link active rounded-0 text-dark py-3 px-3" id="pills-intro-tab" data-bs-toggle="pill" data-bs-target="#pills-intro" type="button" role="tab" aria-controls="pills-intro" aria-selected="true">專業介紹</button>
+          </li>
+          <li class="nav-item border-0 rounded-0" role="presentation">
+            <button class="nav-link rounded-0 text-dark py-3 px-3" id="pills-QA-tab" data-bs-toggle="pill" data-bs-target="#pills-QA" type="button" role="tab" aria-controls="pills-QA" aria-selected="false">常見問答</button>
+          </li>
+          <li class="nav-item border-0 rounded-0" role="presentation">
+            <button class="nav-link rounded-0 text-dark py-3 px-3" id="pills-progress-tab" data-bs-toggle="pill" data-bs-target="#pills-progress" type="button" role="tab" aria-controls="pills-progress" aria-selected="false">目前進度</button>
+          </li>
+          <li class="nav-item border-0 rounded-0" role="presentation">
+            <button class="nav-link rounded-0 text-dark py-3 px-3" id="pills-message-tab" data-bs-toggle="pill" data-bs-target="#pills-message" type="button" role="tab" aria-controls="pills-message" aria-selected="false">留言</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <div class="row g-0 g-md-6">
+        <div class="col-md-8">
+          <section>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-intro" role="tabpanel" aria-labelledby="pills-intro-tab">
+                <article>
+                  <div class="content-intro-picture">
+                    <img class="mb-4" src="./image/p1.jpg" alt="拼拼施了魔法的照片">
+                  </div>
+                  <h3 class="content-intro-title bg-light">施了魔法的照片</h3>
+                  <p>
+                    受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。
+                  </p>
+                </article>
+                <article>
+                  <div class="content-intro-picture">
+                    <img class="mb-4" src="./image/p2.jpg" alt="拼拼施了魔法的照片">
+                  </div>
+                  <h3 class="content-intro-title bg-light">留下當下的美好</h3>
+                  <p>
+                    受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。
+                  </p>
+                </article>
+              </div>
+              <div class="tab-pane fade" id="pills-QA" role="tabpanel" aria-labelledby="pills-QA-tab">常見問答</div>
+              <div class="tab-pane fade" id="pills-progress" role="tabpanel" aria-labelledby="pills-progress-tab">目前進度</div>
+              <div class="tab-pane fade" id="pills-message" role="tabpanel" aria-labelledby="pills-message-tab">留言</div>
+            </div>
+          </section>
+          <section>
+            <img class="d-block mx-auto mb-4" src="./image/icon_heart.svg" alt="拼拼贊助專案圖案">
+            <div class="sponsor-title bg-primary mb-4"></div>
+            <form action="">
+              <div class="mb-3">
+                <label for="sponsorProject" class="form-label">贊助方案</label>
+                <select class="form-select bg-light border-0" aria-label="sponsorProject" id="sponsorProject">
+                  <option selected disabled>請選擇一個方案</option>
+                  <option value="1">吃到飽專案</option>
+                  <option value="2">個人獨家專輯</option>
+                  <option value="3">全家福專案</option>
+                </select>
+              </div>
+              <div class="form-group mb-2">
+                <label class="mb-1" for="sponsorName">收件人姓名</label>
+                <input type="name" class="form-control bg-light border-0" id="sponsorName" aria-describedby="sponsorName" placeholder="">
+              </div> 
+              <div class="form-group mb-3">
+                <label class="mb-1" for="sponsorPhone">連絡電話</label>
+                <input type="phone" class="form-control bg-light border-0" id="sponsorPhone" aria-describedby="sponsorPhone" placeholder="">
+              </div> 
+              <div class="form-group mb-3">
+                <label class="mb-1" for="sponsorEmail">聯絡信箱</label>
+                <input type="email" class="form-control bg-light border-0" id="sponsorEmail" aria-describedby="sponsorEmail" placeholder="">
+              </div> 
+              <div class="mb-3">
+                <label for="sponsorProject" class="form-label">付款方式</label>
+                <select class="form-select bg-light border-0" aria-label="sponsorProject" id="sponsorProject">
+                  <option selected disabled>請選擇一個方案</option>
+                  <option value="1">現金付款</option>
+                  <option value="2">信用卡付款</option>
+                </select>
+              </div>
+              <button class="btn btn-primary rounded-pill d-block mx-auto sponsor-btn">贊助專案</button>
+            </form>
+          </section>
+        </div>
+        <div class="col-md-4">
+          <p class=" border border-danger">
+            這是右邊的預設內容
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-csDark py-4">
+    <p class="mb-0 text-light text-center">Copyright © 拼拼 All rights reserved.</p>
+  </footer>
 
   <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">

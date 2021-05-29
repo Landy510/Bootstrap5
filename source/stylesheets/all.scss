@@ -59,7 +59,7 @@ img {
     margin-right: 10px;
   }
 }
-@media(max-width: 812px){
+@media(max-width: 1000px){
   .header-picture {
     height: 450px;
   }
@@ -70,7 +70,7 @@ img {
 }
 @media(max-width: 567px) {
   .header-picture {
-    height: 200px;
+    height: 300px;
     background-image: url('../image/produt-image-smaller.jpg'); 
   }
 }
@@ -83,4 +83,69 @@ img {
 }
 .Fundraising-section {
   border-left: 5px solid #ffdf65;
+}
+.nav-link {
+  color: #000;
+}
+.nav-link.active {
+  border-bottom: 3px solid #ffdf65;
+}
+.nav-link:hover {
+  border-bottom: 3px solid #ffdf65;
+}
+.content-intro-picture {
+  width: 100%;
+  img {
+    width: 100%; 
+  }
+}
+.content-intro-title{
+  border-left: 5px solid #ffdf65;
+  padding-left: 15px;
+  font-weight: 600;
+}
+.sponsor-title {
+  height: 3px;
+  position: relative;
+}
+.sponsor-title::before {
+  content: '贊助專案';
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  padding: 0 10px;
+  font-weight: 600;
+  font-size: 25px;
+  background-color: #fff;
+
+}
+.sponsor-btn {
+  padding: 10px 40px;
+  font-weight: 600;
+  font-size: 25px;
+}
+@media(max-width: 768px) {
+  .main-content-nav {
+    ul li {
+      width: 25%;
+    }
+    .nav-link {
+      padding:10px !important;
+      width: 100%;
+    }
+  }
+}
+@media(max-width: 639px) {
+  .main-content-nav {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media(max-width: 375px) {
+  .main-content-nav {
+    .nav-link {
+      padding:7px !important;
+    }
+  }
 }
