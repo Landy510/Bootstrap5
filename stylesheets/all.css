@@ -12491,4 +12491,17 @@ img {
   .content-question-title div {
     width: 40px; }
 
+.content-QA-btn {
+  cursor: pointer; }
+  .content-QA-btn .fa-chevron-down {
+    transition: all .5s; }
+
+.content-QA-arrow-active {
+  transform: rotate(180deg); }
+
+.content-QA-description {
+  display: none; }
+  .content-QA-description p {
+    text-align: justify; }
+
 /*# sourceMappingURL=all.css.map */
