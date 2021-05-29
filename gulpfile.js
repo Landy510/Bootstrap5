@@ -24,7 +24,7 @@ gulp.task('clean', () => {
 
 gulp.task('vendorJs', function () {
   return gulp.src([
-    './bower_components/jquery/dist/jquery.slim.min.js',
+    './bower_components/jquery/dist/jquery.min.js',
     './bower_components/bootstrap/dist/js/bootstrap.bundle.min.js'
   ])
   .pipe($.concat('vendor.js'))

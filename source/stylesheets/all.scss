@@ -160,3 +160,18 @@ img {
     width: 40px;
   }
 }
+.content-QA-btn {
+  cursor:pointer;
+  .fa-chevron-down {
+    transition: all .5s;
+  }
+}
+.content-QA-arrow-active {
+  transform:rotate(180deg);
+}
+.content-QA-description {
+  display: none;
+  p {
+    text-align:justify;
+  }
+}
