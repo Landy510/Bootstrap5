@@ -12531,4 +12531,11 @@ img {
   .content-question-title-space {
     display: none; } }
 
+.progress-picture {
+  height: 100%; }
+
+@media (max-width: 568px) {
+  .progress-picture {
+    height: 200px; } }
+
 /*# sourceMappingURL=all.css.map */
