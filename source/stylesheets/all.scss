@@ -4,6 +4,8 @@
 @import 'bootstrap';
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
 
 img {
   max-width: 100%;
@@ -228,4 +230,11 @@ img {
 }
 .message-proposal:hover {
   text-decoration: underline;
+}
+.rightSide-sponsor-card {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+  img {
+    border-top-left-radius: 0.65rem;
+  }
 }

@@ -49,6 +49,7 @@ $cyan:    #0dcaf0 !default;
 $custom-primary: #ffdf65 !default;
 $custom-secondary: #e8e8db !default;
 $custom-dark: #494846 !default;
+$custom-grey: #858377 !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -91,7 +92,8 @@ $theme-colors: (
   "light":      $light,
   "dark":       $dark,
   "csSecondary": $custom-secondary,
-  "csDark": $custom-dark
+  "csDark": $custom-dark,
+  "csGrey": $custom-grey
 ) !default;
 // scss-docs-end theme-colors-map
 
