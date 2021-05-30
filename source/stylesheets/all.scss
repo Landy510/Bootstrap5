@@ -220,3 +220,12 @@ img {
     height: 200px;
   }
 }
+.message-title {
+  border-left: 5px solid #ffdf65;
+}
+.message-proposal {
+  text-decoration: none;
+}
+.message-proposal:hover {
+  text-decoration: underline;
+}
