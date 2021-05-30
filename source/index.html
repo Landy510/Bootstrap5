@@ -132,7 +132,7 @@
       </div>
     </div>
     <div class="container mt-4">
-      <div class="row g-0 g-md-6">
+      <div class="row g-0 g-md-6 mb-4">
         <div class="col-md-8">
           <section class="mb-4">
             <div class="tab-content" id="pills-tabContent">
@@ -386,7 +386,7 @@
               </div>
             </div>
           </section>
-          <section>
+          <section class="d-none d-md-block">
             <img class="d-block mx-auto mb-4" src="./image/icon_heart.svg" alt="拼拼贊助專案圖案">
             <div class="sponsor-title bg-primary mb-4"></div>
             <form action="">
@@ -489,6 +489,42 @@
           </div>
         </div>
       </div>
+      <section class="d-block d-md-none">
+        <img class="d-block mx-auto mb-4" src="./image/icon_heart.svg" alt="拼拼贊助專案圖案">
+        <div class="sponsor-title bg-primary mb-4"></div>
+        <form action="">
+          <div class="mb-3">
+            <label for="sponsorProject" class="form-label">贊助方案</label>
+            <select class="form-select bg-light border-0" aria-label="sponsorProject" id="sponsorProject">
+              <option selected disabled>請選擇一個方案</option>
+              <option value="1">吃到飽專案</option>
+              <option value="2">個人獨家專輯</option>
+              <option value="3">全家福專案</option>
+            </select>
+          </div>
+          <div class="form-group mb-2">
+            <label class="mb-1" for="sponsorName">收件人姓名</label>
+            <input type="name" class="form-control bg-light border-0" id="sponsorName" aria-describedby="sponsorName" placeholder="">
+          </div> 
+          <div class="form-group mb-3">
+            <label class="mb-1" for="sponsorPhone">連絡電話</label>
+            <input type="phone" class="form-control bg-light border-0" id="sponsorPhone" aria-describedby="sponsorPhone" placeholder="">
+          </div> 
+          <div class="form-group mb-3">
+            <label class="mb-1" for="sponsorEmail">聯絡信箱</label>
+            <input type="email" class="form-control bg-light border-0" id="sponsorEmail" aria-describedby="sponsorEmail" placeholder="">
+          </div> 
+          <div class="mb-3">
+            <label for="sponsorProject" class="form-label">付款方式</label>
+            <select class="form-select bg-light border-0" aria-label="sponsorProject" id="sponsorProject">
+              <option selected disabled>請選擇一個方案</option>
+              <option value="1">現金付款</option>
+              <option value="2">信用卡付款</option>
+            </select>
+          </div>
+          <button class="btn btn-primary rounded-pill d-block mx-auto sponsor-btn">贊助專案</button>
+        </form>
+      </section>
     </div>
   </main>
   <footer class="bg-csDark py-4">
