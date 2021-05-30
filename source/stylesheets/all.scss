@@ -212,5 +212,11 @@ img {
     display: none;
   }
 }
-
-
+.progress-picture {
+  height: 100%;
+}
+@media(max-width: 568px) {
+  .progress-picture {
+    height: 200px;
+  }
+}
