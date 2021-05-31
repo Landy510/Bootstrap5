@@ -66,6 +66,10 @@ img {
   .header-feature {
     margin-right: 0px;
     width: 25%;
+    span {
+      width: 100%;
+      text-align: center;
+    }
   }
 }
 @media(max-width: 567px) {
