@@ -5,3 +5,7 @@ $(document).ready(function () {
     $(this).find('.fa-chevron-down').toggleClass('content-QA-arrow-active')
   })
 });
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})

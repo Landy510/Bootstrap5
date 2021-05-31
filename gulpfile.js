@@ -51,7 +51,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('copy', function () {
-  return gulp.src(['./source/**/**', '!source/stylesheets/**/**'])
+  return gulp.src(['./source/**/**', '!source/stylesheets/**/*.scss'])
     .pipe(gulp.dest('./public/'))
     .pipe(browserSync.reload({
       stream: true
