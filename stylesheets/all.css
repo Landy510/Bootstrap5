@@ -4564,7 +4564,7 @@ textarea.form-control-lg {
 .tooltip-inner {
   max-width: 200px;
   padding: 0.25rem 0.5rem;
-  color: #fff;
+  color: #ffdf65;
   text-align: center;
   background-color: #000;
   border-radius: 0.25rem; }
@@ -12474,6 +12474,9 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 400; }
 
+* {
+  font-family: 'Noto Sans TC', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
 img {
   max-width: 100%;
   max-height: 100%; }
@@ -12505,10 +12508,6 @@ img {
   border-right: 1px solid;
   font-size: 20px; }
 
-.header-slogon .bridge {
-  font-size: 25px;
-  padding: 0 10px; }
-
 .header-slogon h2, .header-slogon .h2 {
   font-weight: 600; }
 
@@ -12520,8 +12519,8 @@ img {
 
 .header-feature {
   margin-right: 10px; }
-  .header-feature img {
-    margin-right: 10px; }
+  .header-feature button {
+    margin-right: 0.5rem; }
 
 @media (max-width: 1000px) {
   .header-picture {
@@ -12535,9 +12534,11 @@ img {
     height: 300px;
     background-image: url("../image/produt-image-smaller.jpg"); } }
 
-@media (max-width: 375px) {
-  .header-feature img {
-    margin-right: 1px; } }
+@media (max-width: 376px) {
+  .header-feature button {
+    margin-right: 0px; }
+  .header-feature span {
+    font-size: 14px; } }
 
 .Fundraising-section {
   border-left: 5px solid #ffdf65; }
@@ -12666,5 +12667,12 @@ img {
   border-top-right-radius: 0.75rem; }
   .rightSide-sponsor-card img {
     border-top-left-radius: 0.65rem; }
+
+.btn-follow:hover {
+  background-color: #ffdf65;
+  border: 1px solid transparent;
+  color: #000; }
+  .btn-follow:hover i {
+    color: red; }
 
 /*# sourceMappingURL=all.css.map */
