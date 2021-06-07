@@ -4,6 +4,17 @@ $(document).ready(function () {
     $(this).parent().toggleClass('QAList-option-active')
     $(this).find('.fa-chevron-down').toggleClass('content-QA-arrow-active')
   })
+  if($(window).scrollTop() < 100) {
+    $('.sponsor-mobile-btn').hide()
+  }
+  $(window).scroll(function () {
+    console.log($(window).scrollTop())
+    if ($(window).scrollTop() >= 100) {
+      $('.sponsor-mobile-btn').show()
+    } else {
+      $('.sponsor-mobile-btn').hide()    
+    }
+  })
 });
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {

@@ -12499,6 +12499,10 @@ img {
   .navbar-register-section .btn-primary {
     margin-right: 10px; }
 
+.btn-primary:hover {
+  background-color: #FF785E;
+  color: #fff; }
+
 .register-section-hint {
   border-bottom: 2px solid #f8f9fa;
   position: relative; }
@@ -12677,5 +12681,12 @@ img {
   color: #000; }
   .btn-follow:hover i {
     color: red; }
+
+.sponsor-mobile-btn {
+  display: block; }
+
+@media (min-width: 765px) {
+  .sponsor-mobile-btn {
+    display: none; } }
 
 /*# sourceMappingURL=all.css.map */
