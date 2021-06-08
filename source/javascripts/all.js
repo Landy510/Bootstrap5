@@ -8,8 +8,8 @@ $(document).ready(function () {
     $('.sponsor-mobile-btn').hide()
   }
   $(window).scroll(function () {
-    console.log($(window).scrollTop())
-    if ($(window).scrollTop() >= 100) {
+    const distance = Math.abs($('footer').offset().top - $(window).scrollTop())
+    if ($(window).scrollTop() >= 100 && $(window).width() < 768 && distance > 1500) {
       $('.sponsor-mobile-btn').show()
     } else {
       $('.sponsor-mobile-btn').hide()    
