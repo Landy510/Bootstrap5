@@ -122,20 +122,20 @@
     </div>
   </header>
   <main class="mb-5 content-main">
-    <div class="container-fluid border border-csSecondary border-top-0 main-content-nav">
+    <div class="container-fluid border border-csSecondary border-top-0 main-content-nav sticky-top bg-white">
       <div class="container main-content-nav">
         <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
           <li class="nav-item border-0 rounded-0" role="presentation">
-            <button class="nav-link active rounded-0 text-dark py-3 px-3" id="pills-intro-tab" data-bs-toggle="pill" data-bs-target="#pills-intro" type="button" role="tab" aria-controls="pills-intro" aria-selected="true">專業介紹</button>
+            <button class="nav-link active rounded-0 text-dark py-3 px-3" id="pills-intro-tab" data-bs-toggle="pill" data-bs-target="#pills-intro" type="button" role="tab" aria-controls="pills-intro" aria-selected="true" onclick="goToTab()">專業介紹</button>
           </li>
           <li class="nav-item border-0 rounded-0" role="presentation">
-            <button class="nav-link rounded-0 text-dark py-3 px-3" id="pills-QA-tab" data-bs-toggle="pill" data-bs-target="#pills-QA" type="button" role="tab" aria-controls="pills-QA" aria-selected="false">常見問答</button>
+            <button class="nav-link rounded-0 text-dark py-3 px-3" id="pills-QA-tab" data-bs-toggle="pill" data-bs-target="#pills-QA" type="button" role="tab" aria-controls="pills-QA" aria-selected="false" onclick="goToTab()">常見問答</button>
           </li>
           <li class="nav-item border-0 rounded-0" role="presentation">
-            <button class="nav-link rounded-0 text-dark py-3 px-3" id="pills-progress-tab" data-bs-toggle="pill" data-bs-target="#pills-progress" type="button" role="tab" aria-controls="pills-progress" aria-selected="false">目前進度</button>
+            <button class="nav-link rounded-0 text-dark py-3 px-3" id="pills-progress-tab" data-bs-toggle="pill" data-bs-target="#pills-progress" type="button" role="tab" aria-controls="pills-progress" aria-selected="false" onclick="goToTab()">目前進度</button>
           </li>
           <li class="nav-item border-0 rounded-0" role="presentation">
-            <button class="nav-link rounded-0 text-dark py-3 px-3" id="pills-message-tab" data-bs-toggle="pill" data-bs-target="#pills-message" type="button" role="tab" aria-controls="pills-message" aria-selected="false">留言</button>
+            <button class="nav-link rounded-0 text-dark py-3 px-3" id="pills-message-tab" data-bs-toggle="pill" data-bs-target="#pills-message" type="button" role="tab" aria-controls="pills-message" aria-selected="false" onclick="goToTab()">留言</button>
           </li>
         </ul>
       </div>
@@ -578,5 +578,23 @@
   </div>
   <script src="./javascripts/vendor.js"></script>
   <script src="./javascripts/all.js"></script>
+  <script>
+    function heightOffsetTop (ele) {
+      let bridge = ele
+      const root = document.body
+      let height = 0
+      do {
+        height += bridge.offsetTop
+        bridge = bridge.offsetParent
+      } while(bridge !== root)
+      return height
+    }
+    function goToTab () {
+      window.scrollTo({
+        top: heightOffsetTop(document.getElementsByClassName('tab-content')[0]) - 70,
+        behavior: 'smooth'
+      })
+    }
+  </script>
 </body>
 </html>
